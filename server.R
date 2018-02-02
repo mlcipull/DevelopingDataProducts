@@ -1,7 +1,6 @@
 #rm(list=ls())
 options(repos = c(CRAN = "https://cran.rstudio.com/")) 
-library(shiny)
-library(extRemes)
+source("helpers.R")
 data(HEAT)
 
 options(shiny.sanitize.errors = FALSE)

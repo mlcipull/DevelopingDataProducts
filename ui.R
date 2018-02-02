@@ -7,14 +7,10 @@
 # deployApp()
 # APP URL: https://voitel.shinyapps.io/shiny_app/
 options(shiny.sanitize.errors = FALSE)
+source("helpers.R")
 
-library(shiny)
-library(extRemes)
-attach(HEAT)
-data(HEAT)
 
 ui<-shinyUI(fluidPage(
-  
   # Application title
   titlePanel("Return Periods for Summer maximum temperatures in Phoenix"),
   sidebarLayout(
