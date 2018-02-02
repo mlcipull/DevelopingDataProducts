@@ -1,4 +1,5 @@
 library(shiny)
+install.packages('extRemes')
 library(extRemes)
 library(rsconnect)
 data(HEAT)
